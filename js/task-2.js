@@ -2,7 +2,7 @@ const getUsersWithFriend = (allUsers, friendName) => {
 
     const addFriends = [];
 
-    allUsers.forEach(user => {
+    allUsers.filter(user => {
 
       if (user.friends.includes(friendName)) {
         addFriends.push(user);
@@ -13,6 +13,9 @@ const getUsersWithFriend = (allUsers, friendName) => {
     return addFriends;
     
   };
+
+  
+  
 
 
     const allUsers = [
